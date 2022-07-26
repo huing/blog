@@ -1,7 +1,7 @@
 
 baseURL = 'https://blog.promiseme.site/'
 languageCode = 'zh-cn'
-title = 'My Site'
+title = 'huing的博客'
 theme = 'even'
 
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
