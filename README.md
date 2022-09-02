@@ -16,6 +16,12 @@ git submodule update
 
 ### blog 用法
 
+#### 新建博客
+
+```
+hugo new post/css/css值与单位.md
+```
+
 #### start the hugo server
 
 ```

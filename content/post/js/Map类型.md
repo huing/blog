@@ -1,12 +1,8 @@
 ---
 title: "Map类型"
 date: 2022-06-16T23:20:39+08:00
-lastmod: 2022-06-16T23:20:39+08:00
 draft: false
-keywords: []
-description: ""
-tags: ["javascript", "js"]
-categories: []
+tags: ["js"]
 author: "huing"
 ---
 
@@ -33,7 +29,11 @@ console.log(map2);
 
 ### objects vs maps
 
-|          |                  Map                   |                          Object |
-| -------- | :------------------------------------: | ------------------------------: |
-| 意外的键 |             显式插入的键。             |                  原型链上的键名 |
-| 键的类型 | 任意值，包括函数、对象或任意基本类型。 | 必须是一个 String 或是 Symbol。 |
+- 意外的键
+
+  - map: 显式插入的
+  - object: 原型链上的键名
+
+- 键的类型
+  - map: 任意值，包括函数、对象或任意基本类型
+  - object: 必须是一个 String 或是 Symbol

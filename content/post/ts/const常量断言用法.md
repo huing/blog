@@ -1,12 +1,8 @@
 ---
-title: "typescript中const用法"
+title: "const常量断言用法"
 date: 2022-06-14T10:35:51+08:00
-lastmod: 2022-06-14T10:35:51+08:00
 draft: false
-keywords: []
-description: ""
-tags: ["typescript", "ts"]
-categories: ["typescript"]
+tags: ["ts"]
 author: "huing"
 ---
 
