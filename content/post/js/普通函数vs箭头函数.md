@@ -2,7 +2,7 @@
 title: "普通函数vs箭头函数"
 date: 2022-06-22T22:49:19+08:00
 draft: false
-tags: ["js"]
+categories: ["js"]
 author: "huing"
 ---
 

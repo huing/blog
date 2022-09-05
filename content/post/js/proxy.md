@@ -2,7 +2,7 @@
 title: "Proxy"
 date: 2022-09-01T00:00:37+08:00
 draft: false
-tags: ["js"]
+categories: ["js"]
 author: "huing"
 ---
 

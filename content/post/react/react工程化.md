@@ -1,7 +1,7 @@
 ---
 title: "React工程化"
 date: 2022-06-12T17:31:57+08:00
-tags: ["react"]
+categories: ["react"]
 draft: false
 author: "huing"
 ---

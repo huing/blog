@@ -2,7 +2,7 @@
 title: "Cdn是什么"
 date: 2022-06-13T11:54:42+08:00
 draft: false
-tags: ["性能"]
+categories: ["性能"]
 author: "huing"
 ---
 

@@ -2,7 +2,7 @@
 title: "Promise实现"
 date: 2022-09-02T21:59:01+08:00
 draft: false
-tags: ["js"]
+categories: ["js"]
 author: "huing"
 ---
 

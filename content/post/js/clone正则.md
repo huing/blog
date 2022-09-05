@@ -2,7 +2,7 @@
 title: "Clone正则"
 date: 2022-06-27T19:35:49+08:00
 draft: false
-tags: ["js"]
+categories: ["js"]
 author: "huing"
 ---
 

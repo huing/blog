@@ -2,7 +2,7 @@
 title: "const常量断言用法"
 date: 2022-06-14T10:35:51+08:00
 draft: false
-tags: ["ts"]
+categories: ["ts"]
 author: "huing"
 ---
 

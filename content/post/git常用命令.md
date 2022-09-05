@@ -2,7 +2,7 @@
 title: "Git常用命令"
 date: 2022-06-15T10:11:31+08:00
 draft: false
-tags: ["git"]
+categories: ["git"]
 author: "huing"
 ---
 
