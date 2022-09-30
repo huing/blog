@@ -20,3 +20,15 @@ author: "huing"
   - 设置 html 字体的大小为百分比
   - 用 js 动态设置 html 字体大小
   - 浏览器默认字体大小 16px,最小 12px,css3 并未提及
+
+2. 字重
+
+   100 - Thin
+   200 - Extra Light (Ultra Light)
+   300 - Light
+   400 - Normal
+   500 - Medium
+   600 - Semi Bold (Demi Bold)
+   700 - Bold
+   800 - Extra Bold (Ultra Bold)
+   900 - Black (Heavy)

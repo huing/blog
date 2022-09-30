@@ -6,6 +6,12 @@ draft: false
 author: "huing"
 ---
 
+## useEffect
+
+> https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/
+
+> https://react.iamkasong.com/hooks/useref.html#commit%E9%98%B6%E6%AE%B5
+
 React 工程化
 
 Scheduler（调度器）—— 调度任务的优先级，高优任务优先进入 Reconciler
