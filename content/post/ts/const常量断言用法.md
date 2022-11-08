@@ -28,11 +28,8 @@ const animals = [
   { species: 'dog', name: 'Fido' },
   { species: 'mouse', name: 'Trevor' }
 ] as const
-```
 
-```js
 type Animal = (typeof animals)[number]["species"];
-
 // type Animal = "cat" | "dog" | "mouse"
 ```
 
