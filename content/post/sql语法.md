@@ -3,7 +3,6 @@ title: "Sql语法"
 date: 2022-09-05T21:33:26+08:00
 draft: false
 categories: ["sql"]
-author: "huing"
 ---
 
 ## 精确匹配 id

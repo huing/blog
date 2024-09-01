@@ -3,7 +3,6 @@ title: "useRef vs useState"
 date: 2022-06-15T22:53:05+08:00
 draft: false
 categories: ["react"]
-author: "huing"
 ---
 
 <!-- pages/journal/ref_state.tsx -->

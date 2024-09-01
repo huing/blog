@@ -3,7 +3,6 @@ title: "Base"
 date: 2022-09-01T20:20:27+08:00
 draft: false
 categories: ["js"]
-author: "huing"
 ---
 
 #### 浅拷贝方法

@@ -3,7 +3,6 @@ title: "Map类型"
 date: 2022-06-16T23:20:39+08:00
 draft: false
 categories: ["js"]
-author: "huing"
 ---
 
 ### Map

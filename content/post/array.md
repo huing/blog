@@ -3,7 +3,6 @@ title: "Array"
 date: 2022-09-01T20:21:47+08:00
 draft: false
 categories: ["js"]
-author: "huing"
 ---
 
 ## [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)

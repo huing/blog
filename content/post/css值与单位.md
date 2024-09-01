@@ -3,7 +3,6 @@ title: "Css值与单位"
 date: 2022-08-31T23:12:58+08:00
 draft: false
 categories: ["css"]
-author: "huing"
 ---
 
 1. 绝对长度单位 `与任何东西都没有关系`

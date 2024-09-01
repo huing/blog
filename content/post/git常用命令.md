@@ -3,7 +3,6 @@ title: "Git常用命令"
 date: 2022-06-15T10:11:31+08:00
 draft: false
 categories: ["git"]
-author: "huing"
 ---
 
 git log --pretty=oneline --graph

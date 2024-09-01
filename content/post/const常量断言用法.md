@@ -3,7 +3,6 @@ title: "const常量断言用法"
 date: 2022-06-14T10:35:51+08:00
 draft: false
 categories: ["ts"]
-author: "huing"
 ---
 
 索引访问类型 Indexed Access Types

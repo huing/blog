@@ -1,5 +1,5 @@
 
-baseURL = 'https://blog.promiseme.site/'
+baseURL = 'https://huing.github.io/'
 languageCode = 'zh-cn'
 title = 'huing的博客'
 theme = 'even'
@@ -16,12 +16,12 @@ pygmentsCodefences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 5                                              # 首页每页显示的文章数
+paginate = 100                                           # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
-[params.author]                  # essential                     # 必需
+[author]                  # essential                     # 必需
   name = "huing"
 
 [sitemap]                 # essential                     # 必需
@@ -65,7 +65,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   description = "huing's blog."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 50
+  archivePaginate = 100
 
   # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
   showArchiveCount = false
@@ -111,146 +111,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # Show language selector for multilingual site.
   showLanguageSelector = false
 
-# baseURL = 'https://blog.promiseme.site/'
-# languageCode = 'en-us'
-# title = 'My Site'
-# theme = 'Even'
 
-# paginate = 5
-
-# enableRobotsTXT = true
-# buildDrafts = false
-# buildFuture = false
-# buildExpired = false
-# googleAnalytics = "UA-123-45"
-# pygmentsUseClasses = true
-
-# [minify]
-# disableXML = true
-# minifyOutput = true
-
-# [params]
-# env = "production"
-# title = "ExampleSite"
-# description = "ExampleSite description"
-# keywords = [ "Blog", "Portfolio", "PaperMod" ]
-# author = "Me"
-# images = [ "<link or path of image for opengraph, twitter-cards>" ]
-# DateFormat = "January 2, 2006"
-# defaultTheme = "auto"
-# disableThemeToggle = false
-# ShowReadingTime = true
-# ShowShareButtons = true
-# ShowPostNavLinks = true
-# ShowBreadCrumbs = true
-# ShowCodeCopyButtons = false
-# ShowWordCount = true
-# ShowRssButtonInSectionTermList = true
-# UseHugoToc = true
-# disableSpecial1stPost = false
-# disableScrollToTop = false
-# comments = false
-# hidemeta = false
-# hideSummary = false
-# showtoc = false
-# tocopen = false
-
-#   [params.assets]
-#   favicon = "<link / abs url>"
-#   favicon16x16 = "<link / abs url>"
-#   favicon32x32 = "<link / abs url>"
-#   apple_touch_icon = "<link / abs url>"
-#   safari_pinned_tab = "<link / abs url>"
-
-#   [params.label]
-#   text = "Home"
-#   icon = "/apple-touch-icon.png"
-#   iconHeight = 35
-
-#   [params.profileMode]
-#   enabled = false
-#   title = "ExampleSite"
-#   subtitle = "This is subtitle"
-#   imageUrl = "<img location>"
-#   imageWidth = 120
-#   imageHeight = 120
-#   imageTitle = "my image"
-
-#     [[params.profileMode.buttons]]
-#     name = "Posts"
-#     url = "posts"
-
-#     [[params.profileMode.buttons]]
-#     name = "Tags"
-#     url = "tags"
-
-#   [params.homeInfoParams]
-#   Title = "Hi there 👋"
-#   Content = "Welcome to my blog"
-
-#   [[params.socialIcons]]
-#   name = "twitter"
-#   url = "https://twitter.com/"
-
-#   [[params.socialIcons]]
-#   name = "stackoverflow"
-#   url = "https://stackoverflow.com"
-
-#   [[params.socialIcons]]
-#   name = "github"
-#   url = "https://github.com/"
-
-# [params.analytics.google]
-# SiteVerificationTag = "XYZabc"
-
-# [params.analytics.bing]
-# SiteVerificationTag = "XYZabc"
-
-# [params.analytics.yandex]
-# SiteVerificationTag = "XYZabc"
-
-#   [params.cover]
-#   hidden = true
-#   hiddenInList = true
-#   hiddenInSingle = true
-
-#   [params.editPost]
-#   URL = "https://github.com/<path_to_repo>/content"
-#   Text = "Suggest Changes"
-#   appendFilePath = true
-
-#   [params.fuseOpts]
-#   isCaseSensitive = false
-#   shouldSort = true
-#   location = 0
-#   distance = 1_000
-#   threshold = 0.4
-#   minMatchCharLength = 0
-#   keys = [ "title", "permalink", "summary", "content" ]
-
-# [[menu.main]]
-# identifier = "categories"
-# name = "categories"
-# url = "/categories/"
-# weight = 10
-
-# [[menu.main]]
-# identifier = "tags"
-# name = "tags"
-# url = "/tags/"
-# weight = 20
-
-# [[menu.main]]
-# identifier = "example"
-# name = "example.org"
-# url = "https://example.org"
-# weight = 30
-
-# [markup.highlight]
-# noClasses = false
-
-# disableLiveReload = true
 
 # contentdir = "../mycontent"
 
-# ignoreFiles = ['\.foo$', '\.boo$']
+ignoreFiles = ['\.foo$', '\.boo$']

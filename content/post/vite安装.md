@@ -3,10 +3,9 @@ title: "vite安装vue2和vue3"
 date: 2022-12-07T10:50:52+08:00
 draft: false
 categories: [""]
-author: "huing"
 ---
 
-### vite安装vue2和vue3
+### vite 安装 vue2 和 vue3
 
 原文 <https://github.com/vuejs/create-vue
 

@@ -3,7 +3,6 @@ title: "普通函数vs箭头函数"
 date: 2022-06-22T22:49:19+08:00
 draft: false
 categories: ["js"]
-author: "huing"
 ---
 
 ### this，arguments 区别

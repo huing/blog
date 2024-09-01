@@ -3,7 +3,6 @@ title: "Ref实现父组件调用子组件方法"
 date: 2022-09-04T10:30:23+08:00
 draft: false
 categories: ["ts", "react", "css", "js"]
-author: "huing"
 ---
 
 ### Ref 实现父组件调用子组件方法

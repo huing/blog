@@ -3,7 +3,6 @@ title: "Proxy"
 date: 2022-09-01T00:00:37+08:00
 draft: false
 categories: ["js"]
-author: "huing"
 ---
 
 接口代理
