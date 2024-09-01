@@ -114,8 +114,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 # baseURL = 'https://blog.promiseme.site/'
 # languageCode = 'en-us'
 # title = 'My Site'
-# # theme = 'ananke'
-# theme = 'papermod'
+# theme = 'ananke'
 
 # paginate = 5
 
