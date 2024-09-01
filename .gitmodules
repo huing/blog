@@ -10,6 +10,3 @@
 [submodule "themes/papermod"]
 	path = themes/papermod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
-[submodule "themes/even"]
-	path = themes/even
-	url = https://github.com/olOwOlo/hugo-theme-even.git
