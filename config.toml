@@ -2,7 +2,7 @@
 baseURL = 'https://blog.promiseme.site/'
 languageCode = 'zh-cn'
 title = 'huing的博客'
-theme = 'ananke'
+theme = 'even'
 
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 preserveTaxonomyNames = true
@@ -21,7 +21,7 @@ disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
-[author]                  # essential                     # 必需
+[params.author]                  # essential                     # 必需
   name = "huing"
 
 [sitemap]                 # essential                     # 必需
@@ -61,7 +61,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "theme","ananke", "huing"]
+  keywords = ["Hugo", "theme","even", "huing"]
   description = "huing's blog."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
@@ -114,7 +114,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 # baseURL = 'https://blog.promiseme.site/'
 # languageCode = 'en-us'
 # title = 'My Site'
-# theme = 'ananke'
+# theme = 'Even'
 
 # paginate = 5
 
