@@ -3,3 +3,27 @@ title: "性能指标"
 date: 2024-09-03T07:24:29+08:00
 draft: false
 ---
+
+考察
+
+白屏影响用户率
+
+js 错误影响用户率
+
+LCP Largest Contentful Paint 最大内容绘制
+
+CLS Cumulative Layout Shift 累积布局偏移
+
+TTI Time To Interactive 页面加载开始到页面处于完全可交互状态所花费的时间
+
+FCP First Contentful Paint 首次有内容渲染
+
+不考察
+
+FP First Paint 首次渲染
+
+FMP First Meaningful Paint 首次绘制有意义内容的时间
+
+INP Interaction to Next Paint
+
+与下一次绘制的交互 INP 会在页面生命周期内观察用户与网页进行的所有点击、点按和键盘互动的延迟时间，并报告最长持续时间。INP 较低意味着页面始终能够快速响应大多数用户互动
