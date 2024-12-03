@@ -21,6 +21,10 @@ git branch
 ```
 git branch --set-upstream-to=origin/dev dev 链接远程分支
 git branch -a 查看所有分支
+git branch -v 查看所有本地分支及其最后一次提交
+git branch -r 查看所有远程分支
+git branch --merged 查看已合并到当前分支的分支列表
+git branch --no-merged 显示还未合并到当前分支的分支列表
 git branch -d dev 删除分支
 ```
 

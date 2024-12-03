@@ -8,9 +8,12 @@ side rendering
 
 ![csr](/assets/csr.png "csr")
 
-![ssr](/assets/ssr.png "ssr")
+![ssr](/assets/ssr.png "ssr") ssr
+ssr是什么
 
-![ssg](/assets/ssg.png "ssg")
+
+
+![ssg](/assets/ssg.png "ssg") ssg
 
 ![isr](/assets/isr.png "isr")
 
@@ -19,6 +22,8 @@ side rendering
 ![bff](/assets/bff.png "bff")
 
 ![docker](/assets/docker.png "docker")
+
+
 
 esr
 
