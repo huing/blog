@@ -7,19 +7,19 @@ categories: ["js"]
 
 ### Map
 
-```js
+```ts
 // ✅ Initialize Map from Array
 // 👇️ const map1: Map<string, string>
 const map1: Map<string, string> = new Map([
-  ['name', 'Tom'],
-  ['country', 'Chile'],
+  ["name", "Tom"],
+  ["country", "Chile"],
 ]);
 
 // 👇️ {'name' => 'Tom', 'country' => 'Chile'}
 console.log(map1);
 
 // ✅ Initialize Map from Object
-const obj = { name: 'Tom', country: 'Chile' };
+const obj = { name: "Tom", country: "Chile" };
 const map2 = new Map<string, string>(Object.entries(obj));
 
 // 👇️ {'name' => 'Tom', 'country' => 'Chile'}
