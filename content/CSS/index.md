@@ -1,9 +1,18 @@
 ---
-title: "Css值与单位"
-date: 2022-08-31T23:12:58+08:00
+title: "基本语法"
+date: 2024-09-03T06:55:26+08:00
 draft: false
-categories: ["css"]
 ---
+
+### line-height 如何继承
+
+line-height 具体值 30px 子元素继承该值
+
+line-height 比例 1.5 子元素继承该比例
+
+line-height 百分比 200% 子元素继承 父元素 font-size \* 200% 的值
+
+### css 值与单位
 
 1. 绝对长度单位 `与任何东西都没有关系`
 

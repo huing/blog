@@ -5,6 +5,8 @@ draft: false
 categories: ["js"]
 ---
 
+## promise 实现
+
 ```js
 class Commitment {
   static PENDING = "待定";
@@ -52,5 +54,35 @@ class Commitment {
       });
     });
   }
+}
+```
+
+## 实现一个 myPromiseAll
+
+```js
+function myPromiseAll(promises) {
+  if (!Array.isArray(promises)) {
+    return Promise.reject(new TypeError("arguments must be an array"));
+  }
+  if (promises.length === 0) {
+    return Promise.resolve([]);
+  }
+  return new Promise((resolve, reject) => {
+    let count = 0;
+    let result = [];
+    for (let i = 0; i < promises.length; i++) {
+      Promise.resolve(promises[i])
+        .then((val) => {
+          count++;
+          result[i] = val;
+          if (count === promises.length) {
+            resolve(result);
+          }
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    }
+  });
 }
 ```
