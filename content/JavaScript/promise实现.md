@@ -61,6 +61,9 @@ class Commitment {
 
 ```js
 function myPromiseAll(promises) {
+  if (typeof promises[Symbol.iterator] !== "function") {
+    return Promise.reject(new TypeError("arguments must be an iterator"));
+  }
   if (!Array.isArray(promises)) {
     return Promise.reject(new TypeError("arguments must be an array"));
   }
@@ -85,4 +88,92 @@ function myPromiseAll(promises) {
     }
   });
 }
+```
+
+## promise 执行顺序
+
+```js
+new Promise((resolve) => {
+  console.log(1);
+  resolve();
+})
+  .then(() => {
+    new Promise((resolve) => {
+      console.log(2);
+      resolve();
+    }).then(() => {
+      console.log(4);
+    });
+  })
+  .then(() => {
+    console.log(3);
+  });
+
+new Promise((resolve) => {
+  console.log(1);
+  resolve();
+})
+  .then(() => {
+    new Promise((resolve) => {
+      console.log(2);
+      resolve();
+    }).then(() => {
+      console.log(4);
+    });
+    setTimeout(() => {
+      console.log(5);
+    }, 5000);
+  })
+  .then(() => {
+    console.log(3);
+  });
+
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(1);
+    console.log(1);
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(2);
+        console.log(2);
+        new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(3);
+            console.log(3);
+          });
+        });
+      });
+    });
+  });
+});
+p1.then((res) => {
+  console.log(res);
+  console.log(4);
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(5);
+      console.log(5);
+    });
+  });
+});
+console.log(6);
+```
+
+设置 node=20
+
+```bash
+nvm use 20
+npx -y
+```
+
+把 npm 源设为 npm
+
+```bash
+nrm ls
+nrm use npm
+```
+
+```bash
+export GITHUB_PERSONAL_ACCESS_TOKEN=""
+echo '{"jsonrpc": "2.0", "method":"tools/call", "params":{"name":"search_repositories", "arguments": { "query": "user:huing" }}, "id": 123}' | npx -y @modelcontextprotocol/server-github
 ```
