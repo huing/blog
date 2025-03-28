@@ -23,14 +23,11 @@ draft: false
 ```javascript
 function outer() {
   const message = "Hello";
-
   function inner() {
     console.log(message); // 可以访问 outer 函数中的变量
   }
-
   return inner;
 }
-
 const fn = outer();
 fn(); // 输出: "Hello"
 ```
@@ -52,7 +49,6 @@ function counter() {
     },
   };
 }
-
 const myCounter = counter();
 console.log(myCounter.increment()); // 1
 console.log(myCounter.increment()); // 2
@@ -67,7 +63,6 @@ function multiply(x) {
     return x * y;
   };
 }
-
 const multiplyByTwo = multiply(2);
 console.log(multiplyByTwo(4)); // 8
 ```
@@ -77,11 +72,9 @@ console.log(multiplyByTwo(4)); // 8
 ```javascript
 const module = (function () {
   let privateVariable = 0;
-
   function privateMethod() {
     return privateVariable;
   }
-
   return {
     publicMethod: function () {
       privateVariable++;
@@ -118,6 +111,21 @@ function throttle(fn, interval) {
 
 5. **柯里化（Currying）**
 
+-- function.length
+
+```js
+console.log(Function.length); // 1
+console.log((() => {}).length); // 0
+console.log(((a) => {}).length); // 1
+console.log(((a, b) => {}).length); // 2，依此类推
+console.log(((...args) => {}).length);
+// 0，剩余参数不计算在内
+console.log(((a, b = 1, c) => {}).length);
+// 1，只计算第一个具有默认值的参数之前的参数
+```
+
+-- 实现
+
 ```javascript
 function curry(fn) {
   return function curried(...args) {
@@ -129,6 +137,10 @@ function curry(fn) {
     };
   };
 }
+function add(a, b, c) {
+  return a + b + c;
+}
+curry(add)(1)(2)(3);
 ```
 
 ```js
@@ -151,13 +163,10 @@ function add(...argus) {
   };
   return inner;
 }
-
 // const result = add(1)(2)(3)(4)(5);
 const result = add(1, 2, 3, 4)(5);
 result.toString();
-// 15
 result.value();
-// 15
 ```
 
 #### 使用闭包需要注意的点
@@ -181,4 +190,69 @@ function funB(params) {
   // this 指向 函数内部
   // 有 arguments;
 }
+```
+
+### this 指向
+
+```js
+var test = "王五";
+const outerFun = () => {
+  this.test = "张三";
+  return () => {
+    console.log(this.test);
+  };
+};
+var obj = {
+  test: "李四",
+  innerFun: outerFun(),
+};
+obj.innerFun();
+```
+
+```js
+var test = "王五";
+function outFun() {
+  this.test = "张三";
+  return function () {
+    console.log(this.test);
+  };
+}
+var obj = {
+  test: "李四",
+  inFun: outFun(),
+};
+obj.inFun();
+```
+
+```js
+var test = "王五";
+var obj = {
+  test: "李四",
+  inFun() {
+    console.log(this.test);
+  },
+};
+obj.inFun();
+```
+
+```js
+var test = "王五";
+var obj = {
+  test: "李四",
+  inFun: () => {
+    console.log(this.test);
+  },
+};
+obj.inFun();
+```
+
+```js
+let test = "王五";
+let obj = {
+  test: "李四",
+  inFun: () => {
+    console.log(this.test);
+  },
+};
+obj.inFun();
 ```

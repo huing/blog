@@ -25,6 +25,13 @@ esr
 
 rsr
 
+docker
+lpass
+jenkins
+node
+cdn
+静态托管
+
 nextjs(react)
 
 nuxtjs(vue)
@@ -36,6 +43,10 @@ k8s
 v8s
 
 服务器，镜像，容器
+
+webpack5 module federation 模块联邦，webpack5 的一个新特性，可实现跨应用共享代码
+
+MicroApp 、single-spa、qiankuan
 
 无服务器（Serverless）
 

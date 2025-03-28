@@ -9,3 +9,7 @@ chrome devtools
 android simulator
 
 ios simulator
+
+hybrid 是啥
+
+weex
