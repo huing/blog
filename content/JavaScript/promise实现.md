@@ -93,87 +93,89 @@ function myPromiseAll(promises) {
 ## promise 执行顺序
 
 ```js
-new Promise((resolve) => {
-  console.log(1);
-  resolve();
-})
+console.log("同步任务1");
+
+setTimeout(() => {
+  console.log("宏任务: setTimeout 1");
+}, 0);
+
+Promise.resolve()
   .then(() => {
-    new Promise((resolve) => {
-      console.log(2);
-      resolve();
-    }).then(() => {
-      console.log(4);
-    });
+    console.log("微任务: Promise1");
+    return Promise.resolve();
   })
   .then(() => {
-    console.log(3);
+    console.log("微任务: Promise2");
   });
 
-new Promise((resolve) => {
-  console.log(1);
-  resolve();
-})
-  .then(() => {
-    new Promise((resolve) => {
-      console.log(2);
-      resolve();
-    }).then(() => {
-      console.log(4);
+queueMicrotask(() => {
+  console.log("微任务: queueMicrotask");
+});
+
+setTimeout(() => {
+  console.log("宏任务: setTimeout 2");
+}, 0);
+
+console.log("同步任务2");
+
+setImmediate?.(() => {
+  console.log("宏任务: setImmediate");
+});
+
+process.nextTick(() => {
+  console.log("微任务: process.nextTick");
+});
+```
+
+```js
+console.log("1. 同步代码开始");
+
+// 宏任务1
+setTimeout(() => {
+  console.log("8. setTimeout 回调 (宏任务1)");
+
+  // 在宏任务1中添加微任务
+  Promise.resolve().then(() => {
+    console.log("9. 宏任务1中的微任务");
+
+    // 在微任务中添加新的微任务
+    queueMicrotask(() => {
+      console.log("10. 宏任务1中的微任务的微任务");
     });
+  });
+}, 0);
+
+// 宏任务2
+setTimeout(() => {
+  console.log("11. setTimeout 回调 (宏任务2)");
+}, 0);
+
+// 微任务1
+Promise.resolve().then(() => {
+  console.log("4. Promise 回调 (微任务1)");
+
+  // 在微任务1中添加新的微任务
+  queueMicrotask(() => {
+    console.log("6. 微任务1中的微任务");
+
+    // 在嵌套微任务中添加宏任务
     setTimeout(() => {
-      console.log(5);
-    }, 5000);
-  })
-  .then(() => {
-    console.log(3);
-  });
-
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(1);
-    console.log(1);
-    new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(2);
-        console.log(2);
-        new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve(3);
-            console.log(3);
-          });
-        });
-      });
-    });
+      console.log("12. 嵌套微任务中添加的宏任务");
+    }, 0);
   });
 });
-p1.then((res) => {
-  console.log(res);
-  console.log(4);
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(5);
-      console.log(5);
-    });
-  });
+
+console.log("2. 同步代码继续");
+
+// 微任务2
+queueMicrotask(() => {
+  console.log("5. queueMicrotask 回调 (微任务2)");
 });
-console.log(6);
-```
 
-设置 node=20
+// 微任务3
+Promise.resolve().then(() => {
+  console.log("7. Promise 回调 (微任务3)");
+});
 
-```bash
-nvm use 20
-npx -y
-```
-
-把 npm 源设为 npm
-
-```bash
-nrm ls
-nrm use npm
-```
-
-```bash
-export GITHUB_PERSONAL_ACCESS_TOKEN=""
-echo '{"jsonrpc": "2.0", "method":"tools/call", "params":{"name":"search_repositories", "arguments": { "query": "user:huing" }}, "id": 123}' | npx -y @modelcontextprotocol/server-github
+console.log("3. 同步代码结束");
 ```
