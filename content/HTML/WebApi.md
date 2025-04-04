@@ -16,14 +16,11 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 });
-
 // 获取所有带有 data-src 属性的图片
 document.querySelectorAll("img[data-src]").forEach((img) => {
   imageObserver.observe(img);
 });
 ```
-
-## MutationObserver
 
 ## MutationObserver
 
