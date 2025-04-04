@@ -42,7 +42,6 @@ paginate = 100
   tocopen = false
   since = "2020"
   ShowAllPagesInMenu = true # 添加此参数来启用所有页面显示
-  customCSS = ["extended/custom.css"]
 
 [params.homeInfoParams]
   Title = "Hi there 👋"

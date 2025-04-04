@@ -1,0 +1,2 @@
+{{ $code := readFile (printf "assets/%s" (.Get "file")) }} {{ highlight $code
+(.Get "lang") "" }}
