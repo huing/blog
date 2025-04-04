@@ -2,6 +2,7 @@
 title: "vue中nextTick是宏任务还是微任务,为什么"
 date: 2025-03-25T13:58:25+08:00
 draft: false
+tags: ["Vue"]
 ---
 
 ### Vue nextTick 实现原理

@@ -2,6 +2,7 @@
 title: "Vue"
 date: 2025-03-25T09:35:37+08:00
 draft: false
+tags: ["Vue"]
 ---
 
 ### vue-router 路由守卫 路由原理

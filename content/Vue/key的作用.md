@@ -2,6 +2,7 @@
 title: "Vue中key的作用"
 date: 2025-03-25T13:58:25+08:00
 draft: false
+tags: ["Vue"]
 ---
 
 ## Vue3 中 key 的作用

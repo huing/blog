@@ -2,7 +2,6 @@
 title: "npm命令"
 date: 2022-12-29T10:11:31+08:00
 draft: false
-categories: [""]
 ---
 
 文件读写 fs

@@ -2,7 +2,7 @@
 title: "typescript"
 date: 2024-12-23T16:50:50+08:00
 draft: false
-categories: ["ts", "typescript"]
+tags: ["TypeScript"]
 ---
 
 ## 基础类型

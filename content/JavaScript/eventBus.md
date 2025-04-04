@@ -2,6 +2,7 @@
 title: "EventBus"
 date: 2025-03-19T09:34:28+08:00
 draft: false
+tags: ["JavaScript"]
 ---
 
 ## 实现一个 EventBus 发布/订阅设计模式

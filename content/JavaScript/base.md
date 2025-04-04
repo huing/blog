@@ -2,7 +2,7 @@
 title: "Base"
 date: 2022-09-01T20:20:27+08:00
 draft: false
-categories: ["js"]
+tags: ["JavaScript"]
 ---
 
 #### 浅拷贝方法
@@ -21,13 +21,13 @@ navigator.userAgent;
 navigator.language;
 // "zh-CN"
 navigator.languages;
-// ["zh-CN", "zh", "fr-CA", "fr", "fr-CH", "fr-FR", "en"]
+// ["zh-CN", "zh", "fr-CA", "fr", "fr-CH", "fr-FR", "en"]
 ```
 
 #### setTimeOut 实际延时比设定值更久的原因
 
 - 最小延迟时间
-- 时间误差 函数嵌套延迟 4ms 回调函数阻塞导致函数  setTimeout  接受两个参数：待加入队列的消息和一个时间值（可选，默认为 0）。这个时间值代表了消息被际加入到队列的最小延迟时间。如果队列中没有其它消息并且栈为空，在这段延迟时间过去之后，消息会被马上处理。但是，如果有其它消息，setTimeout  消息必须等待其它消息处理完。因此第二个参数仅仅表示最少延迟时间，而非确切的等待时间。
+- 时间误差 函数嵌套延迟 4ms 回调函数阻塞导致函数 setTimeout 接受两个参数：待加入队列的消息和一个时间值（可选，默认为 0）。这个时间值代表了消息被际加入到队列的最小延迟时间。如果队列中没有其它消息并且栈为空，在这段延迟时间过去之后，消息会被马上处理。但是，如果有其它消息，setTimeout 消息必须等待其它消息处理完。因此第二个参数仅仅表示最少延迟时间，而非确切的等待时间。
 
 #### 字面量 Literals
 
@@ -51,8 +51,8 @@ navigator.languages;
 
 - parse stringify
 - parse() 方法可解析一个日期时间字符串，并返回 1970/1/1 午夜距离该日期时间的毫秒数。
-- JSON.parse()  方法用来解析 JSON 字符串，构造由字符串描述的 JavaScript 值或对象
-- JSON.stringify()  方法是将一个 JavaScript 值(对象或者数组)转换为一个 JSON 字符串
+- JSON.parse() 方法用来解析 JSON 字符串，构造由字符串描述的 JavaScript 值或对象
+- JSON.stringify() 方法是将一个 JavaScript 值(对象或者数组)转换为一个 JSON 字符串
 
 ```javascript
 console.log(

@@ -2,6 +2,7 @@
 title: "WebApi"
 date: 2024-10-30T13:30:51+08:00
 draft: false
+tags: ["HTML"]
 ---
 
 ## IntersectionObserver

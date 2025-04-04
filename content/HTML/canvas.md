@@ -2,6 +2,7 @@
 title: "Canvas"
 date: 2025-03-23T11:53:04+08:00
 draft: false
+tags: ["HTML"]
 ---
 
 ## Canvas 基础概念

@@ -2,6 +2,7 @@
 title: "React的diff算法"
 date: 2025-03-28T07:57:28+08:00
 draft: false
+tags: ["React"]
 ---
 
 ## 什么是虚拟 dom

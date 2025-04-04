@@ -2,6 +2,7 @@
 title: "Tailwindcss自定义配置教程"
 date: 2024-12-05T10:59:00+08:00
 draft: false
+tags: ["CSS"]
 ---
 
 ```js

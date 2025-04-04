@@ -2,6 +2,7 @@
 title: "Stack"
 date: 2025-03-24T14:11:14+08:00
 draft: false
+tags: ["JavaScript"]
 ---
 
 ### Queue 先进先出

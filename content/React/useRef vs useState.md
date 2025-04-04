@@ -2,14 +2,14 @@
 title: "useRef vs useState"
 date: 2022-06-15T22:53:05+08:00
 draft: false
-categories: ["react"]
+tags: ["React"]
 ---
 
 <!-- pages/journal/ref_state.tsx -->
 
-> 原文地址 https://blog.logrocket.com/usestate-vs-useref/
+> 原文地址 <https://blog.logrocket.com/usestate-vs-useref/>
 
-> useHooks 实现 https://usehooks.com/
+> useHooks 实现 <https://usehooks.com/>
 
 useRef
 

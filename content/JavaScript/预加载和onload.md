@@ -2,6 +2,7 @@
 title: "预加载和onload"
 date: 2025-04-03T13:50:59+08:00
 draft: false
+tags: ["JavaScript"]
 ---
 
 ## 预加载 和 window.onload 的区别

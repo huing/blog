@@ -1,6 +1,7 @@
 ---
 title: "AI"
 date: 2025-02-06T15:38:52+08:00
+tags: ["LLM"]
 ---
 
 异常值（Outliers）

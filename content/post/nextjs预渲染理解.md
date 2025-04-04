@@ -2,7 +2,6 @@
 title: "nextjs预渲染理解"
 date: 2022-06-27T19:13:36+08:00
 draft: false
-categories: ["性能"]
 ---
 
 ### 静态生成

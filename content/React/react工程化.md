@@ -1,15 +1,15 @@
 ---
 title: "React工程化"
 date: 2022-06-12T17:31:57+08:00
-categories: ["react"]
 draft: false
+tags: ["React"]
 ---
 
 ## useEffect
 
-> https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/
+> <https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/>
 
-> https://react.iamkasong.com/hooks/useref.html#commit%E9%98%B6%E6%AE%B5
+> <https://react.iamkasong.com/hooks/useref.html#commit%E9%98%B6%E6%AE%B5>
 
 React 工程化
 
