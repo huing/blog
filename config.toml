@@ -38,6 +38,7 @@ paginate = 1000
   showtoc = true
   tocopen = false
   since = "2020"
+  ShowAllPagesInMenu = true # 添加此参数来启用所有页面显示
 
 [params.homeInfoParams]
   Title = "Hi there 👋"
@@ -45,18 +46,13 @@ paginate = 1000
 
 [[menu.main]]
   name = "首页"
-  url = "/"
+  url = "/post/"
   weight = 10
 
 [[menu.main]]
   name = "标签"
   url = "/tags/"
-  weight = 30
-
-[[menu.main]]
-  name = "分类"
-  url = "/categories/"
-  weight = 40
+  weight = 20
 
 [[params.socialIcons]]
   name = "github"
