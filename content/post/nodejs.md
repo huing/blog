@@ -1,8 +1,17 @@
 ---
-title: "包管理"
-date: 2024-09-03T07:04:57+08:00
+title: "npm命令"
+date: 2022-12-29T10:11:31+08:00
 draft: false
+categories: [""]
 ---
+
+文件读写 fs
+
+路径查找 path
+
+网络 http
+
+## 包管理
 
 ## npm
 
@@ -43,3 +52,29 @@ draft: false
 - `umd` 是通用格式，主要用于浏览器环境，可以同时支持多种模块系统。
 
 这三种格式的存在使得同一个包可以在不同环境下都能正常使用，开发者可以根据具体使用场景选择最适合的版本。
+
+## npm 命令
+
+login
+
+```js
+npm login
+```
+
+change version
+
+```js
+npm version 1.0.0-beta.0
+```
+
+publish
+
+```js
+npm publish --tag beta
+```
+
+use
+
+```js
+npm install — save libraryname@beta.num
+```
