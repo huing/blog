@@ -1,0 +1,8 @@
+.toc {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 250px;
+  max-height: 80vh;
+  overflow-y: auto;
+}

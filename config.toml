@@ -3,12 +3,15 @@ languageCode = 'zh-cn'
 title = 'huing的博客'
 theme = 'PaperMod'
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 defaultContentLanguage = "zh-cn"
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = false
 hasCJKLanguage = true
-paginate = 1000
+paginate = 100
 
 [author]
   name = "huing"
@@ -39,6 +42,7 @@ paginate = 1000
   tocopen = false
   since = "2020"
   ShowAllPagesInMenu = true # 添加此参数来启用所有页面显示
+  customCSS = ["extended/custom.css"]
 
 [params.homeInfoParams]
   Title = "Hi there 👋"
@@ -46,13 +50,23 @@ paginate = 1000
 
 [[menu.main]]
   name = "首页"
-  url = "/post/"
+  url = "/"
   weight = 10
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 40
 
 [[menu.main]]
   name = "标签"
   url = "/tags/"
-  weight = 20
+  weight = 40
 
 [[params.socialIcons]]
   name = "github"
