@@ -88,3 +88,14 @@ export const useCounterStore = defineStore("counter", {
 ## Suspense
 
 `<Suspense>` 是一个内置组件，用来在组件树中协调对异步依赖的处理
+
+## vue2 响应式数组能不能被监听
+
+响应式数组不能被监听，因为数组本身没有触发响应式机制，所以无法被监听。
+响应式数组的修改是通过数组的索引来修改的，而不是直接修改数组本身。当修改数组的索引时，Vue.js 无法识别到这一变化，所以无法触发响应式机制。
+解决方法：
+响应式数组可以通过使用数组的 push、pop、shift、unshift、splice 等方法来修改，这些方法会触发响应式机制。
+
+## vue3 响应式数组能不能被监听
+
+在 Vue 3 中，响应式数组可以通过 `ref` 或 `reactive` 来创建，然后使用 `watch` 或 `watchEffect` 来监听数组的变化。
