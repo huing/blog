@@ -10,16 +10,6 @@ draft: false
 
 网络 http
 
-## 包管理
-
-## npm
-
-## yarn
-
-## npx
-
-## pnpm
-
 ## package.json 配置
 
 ### 入口文件字段
